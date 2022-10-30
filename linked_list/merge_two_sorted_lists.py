@@ -22,9 +22,12 @@
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         
+        # create a dummy node for returning head as result
         out = ListNode(0)
+        # a pointer
         current = out
         
+        # the order doesnt matter because we will fill the rest in later
         while list1 and list2:
             if list1.val <= list2.val:
                 current.next = list1
@@ -33,6 +36,8 @@ class Solution:
                 current.next = list2
                 list2 = list2.next
             current = current.next
+        # fill in the rest when one list is done iterating
         current.next = list1 or list2
         
+        # return the dummy node pointing head
         return out.next
