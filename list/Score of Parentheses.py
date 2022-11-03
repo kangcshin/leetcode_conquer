@@ -19,3 +19,18 @@
 
 # Input: s = "()()"
 # Output: 2
+
+class Solution:
+    def scoreOfParentheses(self, s: str) -> int:
+        out, count = 0, 0
+        for i, x in enumerate(s):
+            if x == '(':
+                count += 1
+            else:
+                count -= 1
+                if s[i-1] == '(':
+                    # << is bits shifted by "counts" place
+                    # this is the same as multiplying 1 by 2**count.
+                    out += 1 << count
+        return out
+        
