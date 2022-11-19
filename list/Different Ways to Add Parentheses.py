@@ -45,7 +45,6 @@ class Solution:
         memo[input] = res
         return res
 
-
     def helper(self, m, n, op):
         if op == "+":
             return m+n
@@ -54,7 +53,6 @@ class Solution:
         else:
             return m*n
  
-####
 class Solution:
     def diffWaysToCompute(self, input: str) -> List[int]:
         if input.isdigit(): return [int(input)]
