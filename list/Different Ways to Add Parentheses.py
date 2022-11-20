@@ -23,7 +23,6 @@
 # (((2*3)-4)*5) = 10
 
 class Solution:
-
         
     def diffWaysToCompute(self, input, memo={}):
         """
@@ -53,6 +52,7 @@ class Solution:
         else:
             return m*n
  
+
 class Solution:
     def diffWaysToCompute(self, input: str) -> List[int]:
         if input.isdigit(): return [int(input)]
