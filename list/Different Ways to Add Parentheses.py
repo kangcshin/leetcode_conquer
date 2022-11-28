@@ -2,8 +2,6 @@
 
 # The test cases are generated such that the output values fit in a 32-bit integer and the number of different results does not exceed 104.
 
- 
-
 # Example 1:
 
 # Input: expression = "2-1-1"
