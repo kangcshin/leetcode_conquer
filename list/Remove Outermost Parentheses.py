@@ -8,7 +8,6 @@
 # Return s after removing the outermost parentheses of every primitive string in the primitive decomposition of s.
 
  
-
 # Example 1:
 
 # Input: s = "(()())(())"
